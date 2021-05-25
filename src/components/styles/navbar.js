@@ -54,6 +54,9 @@ const useStyles = makeStyles(theme => ({
         fontWeight:'600',
         '&:hover':{
             backgroundColor:Theme.main.icon
+        },
+        [theme.breakpoints.down('md')]:{
+            width:'100px'
         }
     },
     smHide:{
@@ -63,6 +66,11 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('sm')]:{
             display:'none'
         },
+    },
+    mdHide:{
+        [theme.breakpoints.up('md')]:{
+            display:'none'
+        }
     }
 }));
 
