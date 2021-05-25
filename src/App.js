@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter,Switch,Route } from 'react-router-dom'
+import { BrowserRouter,Switch,Route, Redirect } from 'react-router-dom'
 import { Routes } from './Routes'
 
 function App() {
@@ -7,6 +7,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
+          <Route exact={true} path="/">
+            <Redirect to="/bangalore"/>
+          </Route>
           {
             Routes.map(route => {
               return(

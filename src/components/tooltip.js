@@ -3,8 +3,8 @@ import { withStyles } from '@material-ui/core/styles';
 
 const HtmlTooltip = withStyles((theme) => ({
     tooltip: {
-      backgroundColor: '#f5f5f9',
-      color: 'rgba(0, 0, 0, 0.87)',
+      backgroundColor: '#0f1938',
+      color: '#ffffff',
       maxWidth: 220,
       fontSize: theme.typography.pxToRem(12),
       border: '1px solid #dadde9',

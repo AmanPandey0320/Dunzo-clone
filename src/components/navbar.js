@@ -29,9 +29,13 @@ const Navbar = (props) => {
                         <Tooltip
                          title={
                             <React.Fragment>
-                              <Typography color="inherit">Tooltip with HTML</Typography>
-                              <em>{"And here's"}</em> <b>{'some'}</b> <u>{'amazing content'}</u>.{' '}
-                              {"It's very engaging. Right?"}
+                              <Typography color="inherit"><strong>Set your delivery location</strong></Typography>
+                              <div>
+                                  <span>
+                                      This helps us deliver your order from nearest store
+                                  </span>
+                              </div>
+                              <br/>
                             </React.Fragment>
                           }
                         >

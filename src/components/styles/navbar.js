@@ -71,6 +71,10 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.up('md')]:{
             display:'none'
         }
+    },
+    setLocationBtn:{
+        color:Theme.main.body,
+        fontWeight:'600'
     }
 }));
 
