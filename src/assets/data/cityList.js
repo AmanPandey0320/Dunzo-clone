@@ -91,7 +91,7 @@ export const cityList = {
                 id:3,
                 name:'Aswanath Nagar',
                 path:'/aswanath-nagar'
-            },,
+            },
             {
                 id:13,
                 name:'Aswath Nagar',
