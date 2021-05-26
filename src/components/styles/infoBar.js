@@ -3,10 +3,11 @@ import { Theme } from "../../assets/data/theme";
 
 const useStyles = makeStyles(theme => ({
     root:{
-        backgroundColor:'#f0f2f7'
+        backgroundColor:'#f0f2f7',
+        marginTop:'3%'
     },
     image:{
-        width:'30%',
+        width:'20%',
     },
     sideText:{
         position:'absolute',

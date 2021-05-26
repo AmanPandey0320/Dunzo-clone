@@ -11,6 +11,7 @@ import { mainScroll,daily,topPicks } from '../assets/data/scroller';
 import { cityList } from '../assets/data/cityList'
 import FooterWrapper from '../components/footer';
 import Infobar from '../components/infoBar';
+import DeliverArea from '../components/area';
 
 const Home = (props) => {
 
@@ -47,6 +48,7 @@ const Home = (props) => {
             </BodyWrapper>
             <FooterWrapper>
                 <Infobar/>
+                <DeliverArea city={params.id}/>
             </FooterWrapper>
             <br/>
         </HomeWrapper>
