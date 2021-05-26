@@ -12,7 +12,7 @@ const DeliverArea = (props) => {
         <div className={classes.root}>
             <Container className={classes.innerRoot}>
                 <p  className={classes.p}>Areas We Deliver to</p>
-                <Grid container>
+                <Grid xs={12} lg={16} sm={12} container>
                 {
                     areas.map(area => {
                         return(
