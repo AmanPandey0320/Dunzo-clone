@@ -58,7 +58,7 @@ const Navbar = (props) => {
                             </IconButton>
                         </Link>
                         <Link className={`${classes.link} ${classes.smHide}`} to="#">
-                            <Button className={classes.button} onClick={()=>{alert('signin')}} >
+                            <Button className={classes.button} onClick={uiHandler({type:'TOGGLE_SIGNIN',data:true})} >
                                 <RiLoginCircleFill/>Sign In
                             </Button>
                         </Link>
@@ -73,7 +73,7 @@ const Navbar = (props) => {
                                 onClose={handleMenu(false)}
                                 keepMounted
                               >
-                                  <MenuList onClick={()=>{alert('signin')}}>
+                                  <MenuList onClick={uiHandler({type:'TOGGLE_SIGNIN',data:true})}>
                                       <Link className={classes.link} to="#">
                                         Sign In to Dunzo
                                       </Link>

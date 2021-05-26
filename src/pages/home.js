@@ -14,17 +14,22 @@ import Infobar from '../components/infoBar';
 import DeliverArea from '../components/area';
 import MainFooter from '../components/mainFooter';
 import SigninModal from '../components/signIn';
+import SignIn from '../components/signIn_main';
 
 const Home = (props) => {
 
     const classes = useStyles();
     const params = useParams();
     const [bread,setBread] = useState(['Home',cityList[params.id].name]);
-    const [location,setLocation] = useState(false)
+    const [location,setLocation] = useState(false);
+    const [signin,setSignin] = useState(false)
 
     const uiHandler = ({type,data}) => (event) => {
         if(type === 'TOGGLE_LOCATION'){
             setLocation(data);
+        }
+        if(type === 'TOGGLE_SIGNIN'){
+            setSignin(data);
         }
     }
 
@@ -35,6 +40,7 @@ const Home = (props) => {
         <HomeWrapper>
             <Navbar uiHandler={uiHandler}/>
             <SigninModal open={location} uiHandler={uiHandler}/>
+            <SignIn open={signin} uiHandler={uiHandler}/>
             <BodyWrapper>
                 <br/>
                 <Breadcrumbs

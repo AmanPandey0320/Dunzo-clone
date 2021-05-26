@@ -5,7 +5,7 @@ const useStyles = makeStyles(theme => ({
     header:{
         fontSize:'x-large',
         fontFamily:'Nunito',
-        fontWeight:'500',
+        fontWeight:'600',
         color:Theme.main.text
     },
     textField:{
@@ -22,6 +22,21 @@ const useStyles = makeStyles(theme => ({
         fontSize:'small',
         fontFamily:'Nunito',
         fontWeight:'500',
+    },
+    image:{
+        width:'16%',
+        margin:'4%'
+    },
+    header2:{
+        fontFamily:'Nunito',
+        fontWeight:'600',
+        color:Theme.main.text
+    },
+    subheader2:{
+        fontSize:'small',
+        fontFamily:'Nunito',
+        fontWeight:'600',
+        color:'grey'
     }
 }));
 
