@@ -18,11 +18,14 @@ const Home = (props) => {
 
     const classes = useStyles();
     const params = useParams();
-    const [bread,setBread] = useState(['Home',cityList[params.id].name]);
+    const [bread,setBread] = useState([]);
+    const [paths,setPaths] = useState([]);
 
     useEffect(()=>{
-        setBread(['Home',cityList[params.id].name]);
-    },[params.id]);
+        const subArea = cityList[params.city].subList.filter(area => area.path === `/${params.id}`);
+        setPaths(['/',`/city/${params.city}`,`/city/${params.city}/${params.id}`]);
+        setBread(['Home',cityList[params.city].name,subArea[0].name]);
+    },[params]);
 
     return(
         <HomeWrapper>
@@ -33,7 +36,7 @@ const Home = (props) => {
                     separator={<TiArrowRightThick/>}
                 >
                     {
-                        bread.map((element,index) => <Link key={index} className={classes.breadLink} to="/">{element}</Link>)
+                        bread.map((element,index) => <Link key={index} className={classes.breadLink} to={paths[index]} >{element}</Link>)
                     }
                 </Breadcrumbs>
                 <br/>
@@ -53,7 +56,7 @@ const Home = (props) => {
             </BodyWrapper>
             <FooterWrapper>
                 <Infobar/>
-                <DeliverArea city={params.id}/>
+                <DeliverArea city={params.city}/>
                 <MainFooter/>
             </FooterWrapper>
         </HomeWrapper>

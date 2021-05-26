@@ -14,8 +14,8 @@ export const cityList = {
             },
             {
                 id:3,
-                name:'Akshaya Nagar',
-                path:'/akshaya-nagar'
+                name:'Aswanath Nagar',
+                path:'/aswanath-nagar'
             },
             {
                 id:13,
@@ -89,9 +89,9 @@ export const cityList = {
             },
             {
                 id:3,
-                name:'Akshaya Nagar',
-                path:'/akshaya-nagar'
-            },
+                name:'Aswanath Nagar',
+                path:'/aswanath-nagar'
+            },,
             {
                 id:13,
                 name:'Aswath Nagar',
@@ -164,8 +164,8 @@ export const cityList = {
             },
             {
                 id:3,
-                name:'Akshaya Nagar',
-                path:'/akshaya-nagar'
+                name:'Aswanath Nagar',
+                path:'/aswanath-nagar'
             },
             {
                 id:13,
@@ -239,8 +239,8 @@ export const cityList = {
             },
             {
                 id:3,
-                name:'Akshaya Nagar',
-                path:'/akshaya-nagar'
+                name:'Aswanath Nagar',
+                path:'/aswanath-nagar'
             },
             {
                 id:13,
@@ -314,8 +314,8 @@ export const cityList = {
             },
             {
                 id:3,
-                name:'Akshaya Nagar',
-                path:'/akshaya-nagar'
+                name:'Aswanath Nagar',
+                path:'/aswanath-nagar'
             },
             {
                 id:13,
@@ -389,8 +389,8 @@ export const cityList = {
             },
             {
                 id:3,
-                name:'Akshaya Nagar',
-                path:'/akshaya-nagar'
+                name:'Aswanath Nagar',
+                path:'/aswanath-nagar'
             },
             {
                 id:13,
@@ -464,8 +464,8 @@ export const cityList = {
             },
             {
                 id:3,
-                name:'Akshaya Nagar',
-                path:'/akshaya-nagar'
+                name:'Aswanath Nagar',
+                path:'/aswanath-nagar'
             },
             {
                 id:13,
