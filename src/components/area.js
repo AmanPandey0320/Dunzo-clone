@@ -14,7 +14,7 @@ const DeliverArea = (props) => {
                 {
                     areas.map(area => {
                         return(
-                            <Grid className={classes.itemGrid} xs={2} lg={2} sm={3} item>{area.name}</Grid>
+                            <Grid className={classes.itemGrid} xs={4} lg={2} sm={3} item>{area.name}</Grid>
                         )
                     })
                 }

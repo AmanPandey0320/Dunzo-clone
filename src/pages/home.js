@@ -12,6 +12,7 @@ import { cityList } from '../assets/data/cityList'
 import FooterWrapper from '../components/footer';
 import Infobar from '../components/infoBar';
 import DeliverArea from '../components/area';
+import MainFooter from '../components/mainFooter';
 
 const Home = (props) => {
 
@@ -49,8 +50,8 @@ const Home = (props) => {
             <FooterWrapper>
                 <Infobar/>
                 <DeliverArea city={params.id}/>
+                <MainFooter/>
             </FooterWrapper>
-            <br/>
         </HomeWrapper>
     );
 }

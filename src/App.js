@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact={true} path="/">
-            <Redirect to="/bangalore"/>
+            <Redirect to="/city/bangalore"/>
           </Route>
           {
             Routes.map(route => {

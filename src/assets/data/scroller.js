@@ -71,3 +71,107 @@ export const daily = [
         text:'Gifts and Lifestyle'
     }
 ]
+
+export const footerList={
+    dunzo:[
+        {
+            id:1,
+            text:'About',
+            path:'/about'
+        },
+        {
+            id:2,
+            text:'Jobs',
+            path:'/jobs'
+        },
+        {
+            id:3,
+            text:'Contact',
+            path:'/contact'
+        },
+        {
+            id:4,
+            text:'Terms & Conditions',
+            path:'/terms-and-condition'
+        },
+        {
+            id:5,
+            text:'Privacy Policy',
+            path:'/privacy-policy'
+        },
+        {
+            id:6,
+            text:'Dunzo for partner',
+            path:'/dunzo-for-partners'
+        },
+        {
+            id:7,
+            text:'Dunzo for business',
+            path:'/dunzo-for-business'
+        }
+    ],
+    cities:[
+        {
+            id:1,
+            text:'Bangalore',
+            path:'/city/bangalore'
+        },
+        {
+            id:2,
+            text:'Chennai',
+            path:'/city/chennai'
+        },
+        {
+            id:3,
+            text:'Pune',
+            path:'/city/pune'
+        },
+        {
+            id:4,
+            text:'Gurgaon',
+            path:'/city/gurgaon'
+        },
+        {
+            id:5,
+            text:'Hyderabad',
+            path:'/city/hyderabad'
+        },
+        {
+            id:6,
+            text:'New Delhi',
+            path:'/city/newdelhi'
+        },
+        {
+            id:7,
+            text:'Mumbai',
+            path:'/city/mumbai'
+        }
+    ],
+    getTouch:[
+        {
+            id:1,
+            text:'Email',
+            path:'/email'
+        },
+        {
+            id:2,
+            text:'Facebook',
+            path:'/facebook'
+        },
+        {
+            id:3,
+            text:'Twitter',
+            path:'/twitter'
+        },
+        {
+            id:4,
+            text:'Instagram',
+            path:'/instagram'
+        },
+        {
+            id:5,
+            text:'LinkedIn',
+            path:'/linkedin'
+        }
+    ]
+}

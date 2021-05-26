@@ -4,7 +4,8 @@ import { Theme } from "../../assets/data/theme";
 const useStyles = makeStyles(theme => ({
     root:{
         backgroundColor:'#f0f2f7',
-        marginTop:'3%'
+        marginTop:'3%',
+        
     },
     image:{
         width:'20%',
@@ -18,7 +19,6 @@ const useStyles = makeStyles(theme => ({
         fontSize:'large',
         fontWeight:'500',
         [theme.breakpoints.down('sm')]:{
-            top:0,
             fontSize:'small'
         }
     },
@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     },
     storeIcons:{
         [theme.breakpoints.down('sm')]:{
-            width:'45%'
+            width:'35%'
         },
         '&:hover':{
             cursor:'pointer'
@@ -42,6 +42,9 @@ const useStyles = makeStyles(theme => ({
         display:'flex',
         flexDirection:'row',
         justifyContent:'center',
+        [theme.breakpoints.down('xs')]:{
+            width:'100%'
+        }
     }
 }));
 

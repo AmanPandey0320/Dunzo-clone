@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core";
-import { Theme } from "../../assets/data/theme";
 
 const useStyles = makeStyles(theme => ({
     root:{
@@ -8,6 +7,12 @@ const useStyles = makeStyles(theme => ({
     },
     innerRoot:{
         width:'70%',
+        [theme.breakpoints.down('sm')]:{
+            
+        },
+        [theme.breakpoints.down('xs')]:{
+            width:'100%'
+        }
     },
     containerGrid:{
 
