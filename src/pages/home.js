@@ -13,20 +13,28 @@ import FooterWrapper from '../components/footer';
 import Infobar from '../components/infoBar';
 import DeliverArea from '../components/area';
 import MainFooter from '../components/mainFooter';
+import SigninModal from '../components/signIn';
 
 const Home = (props) => {
 
     const classes = useStyles();
     const params = useParams();
     const [bread,setBread] = useState(['Home',cityList[params.id].name]);
+    const [location,setLocation] = useState(false)
+
+    const uiHandler = ({type,data}) => (event) => {
+        if(type === 'TOGGLE_LOCATION'){
+            setLocation(data);
+        }
+    }
 
     useEffect(()=>{
         setBread(['Home',cityList[params.id].name]);
     },[params.id]);
-
     return(
         <HomeWrapper>
-            <Navbar/>
+            <Navbar uiHandler={uiHandler}/>
+            <SigninModal open={location} uiHandler={uiHandler}/>
             <BodyWrapper>
                 <br/>
                 <Breadcrumbs

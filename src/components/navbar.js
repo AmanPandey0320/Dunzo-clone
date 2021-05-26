@@ -12,6 +12,7 @@ const Navbar = (props) => {
     const classes = useStyles();
     const [menu,setMenu] = useState(false);
     const [anchor,setAnchor] = useState(null);
+    const { uiHandler } = props;
     const handleMenu = (open) => (e) => {
         if(menu === false){
             setAnchor(e.currentTarget);
@@ -40,7 +41,7 @@ const Navbar = (props) => {
                           }
                         >
                             <div style={{width:'140px'}}>
-                                <LocationBar/>
+                                <LocationBar uiHandler={uiHandler} />
                             </div>
                         </Tooltip>
                     </Toolbar>
