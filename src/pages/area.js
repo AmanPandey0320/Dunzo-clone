@@ -13,6 +13,8 @@ import FooterWrapper from '../components/footer';
 import Infobar from '../components/infoBar';
 import DeliverArea from '../components/area';
 import MainFooter from '../components/mainFooter';
+import SigninModal from '../components/signIn';
+import SignIn from '../components/signIn_main';
 
 const Home = (props) => {
 
@@ -20,6 +22,17 @@ const Home = (props) => {
     const params = useParams();
     const [bread,setBread] = useState([]);
     const [paths,setPaths] = useState([]);
+    const [location,setLocation] = useState(false);
+    const [signin,setSignin] = useState(false)
+
+    const uiHandler = ({type,data}) => (event) => {
+        if(type === 'TOGGLE_LOCATION'){
+            setLocation(data);
+        }
+        if(type === 'TOGGLE_SIGNIN'){
+            setSignin(data);
+        }
+    }
 
     useEffect(()=>{
         const subArea = cityList[params.city].subList.filter(area => area.path === `/${params.id}`);
@@ -29,7 +42,9 @@ const Home = (props) => {
 
     return(
         <HomeWrapper>
-            <Navbar/>
+            <Navbar uiHandler={uiHandler}/>
+            <SigninModal open={location} uiHandler={uiHandler}/>
+            <SignIn open={signin} uiHandler={uiHandler}/>
             <BodyWrapper>
                 <br/>
                 <Breadcrumbs
