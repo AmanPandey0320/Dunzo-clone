@@ -42,13 +42,13 @@ const Home = (props) => {
                     Why step out when you can get everything delivered home with the tap of a button? Bangalore’s favourite delivery app gets you Food, Grocery, Medicine, Pet Supplies, Fruits & Vegetables, Meat & Fish, Health & Wellness, Gifts and Send Packages from one end of the city to the other. From your local kirana stores to your favourite brands, grocery shopping to your forgotten charger, we are always on the move for you. Why worry about your chores, when you can get it all Dun!
                 </p>
                 <br/>
-                <Grid big={true} items={mainScroll}/>
+                <Grid big={true} city={params.id} area="" items={mainScroll}/>
                 <br/>
-                <SmallGrid items={daily}/>
+                <SmallGrid city={params.id} area="" items={daily}/>
                 <br/><br/><br/><br/>
                 <Typography className={classes.header1} >Top picks for you</Typography>
                 <br/>
-                <Grid big={true} items={topPicks}/>
+                <Grid big={true} city={params.id} area="" items={topPicks}/>
                 <br/>
             </BodyWrapper>
             <FooterWrapper>

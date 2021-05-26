@@ -14,19 +14,23 @@ import gift from '../images/gift.jpg'
 export const mainScroll = [
     {
         id:1,
-        image:sc01
+        image:sc01,
+        path:'/groceries-and-essentials'
     },
     {
         id:2,
-        image:sc02
+        image:sc02,
+        path:'/pickup-and-drop'
     },
     {
         id:3,
-        image:sc03
+        image:sc03,
+        path:'/resturants'
     },
     {
         id:4,
-        image:sc04
+        image:sc04,
+        path:'/fruits-and-vegetables'
     }
 ]
 
@@ -53,22 +57,26 @@ export const daily = [
     {
         id:1,
         image:meat,
-        text:'Meat and fish'
+        text:'Meat and fish',
+        path:'/meat-and-fish'
     },
     {
         id:2,
         image:pet,
-        text:'Pet Supplies'
+        text:'Pet Supplies',
+        path:'/pet-supplies'
     },
     {
         id:3,
         image:paan,
-        text:'Pan Shop'
+        text:'Pan Shop',
+        path:'/pan-shop'
     },
     {
         id:4,
         image:gift,
-        text:'Gifts and Lifestyle'
+        text:'Gifts and Lifestyle',
+        path:'/gift-and-lifestyle'
     }
 ]
 
