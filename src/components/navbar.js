@@ -61,7 +61,7 @@ const Navbar = (props) => {
                                 <RiLoginCircleFill/>Sign In
                             </Button>
                         </Link>
-                        <Link className={`${classes.link} ${classes.mdHide}`}>
+                        <Link className={`${classes.link} ${classes.mdHide}`} to="#" >
                           <IconButton onClick={handleMenu(!menu)} >
                               <BsThreeDotsVertical color="#000000"/>
                               <Menu

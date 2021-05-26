@@ -10,11 +10,11 @@ const DeliverArea = (props) => {
         <div className={classes.root}>
             <Container className={classes.innerRoot}>
                 <p  className={classes.p}>Areas We Deliver to</p>
-                <Grid xs={12} container>
+                <Grid container>
                 {
                     areas.map(area => {
                         return(
-                            <Grid className={classes.itemGrid} xs={4} lg={2} sm={3} item>{area.name}</Grid>
+                            <Grid key={area.id} className={classes.itemGrid} xs={4} lg={2} sm={3} item>{area.name}</Grid>
                         )
                     })
                 }

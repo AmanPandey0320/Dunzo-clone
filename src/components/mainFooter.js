@@ -28,7 +28,7 @@ const MainFooter = (props) => {
                                 {
                                     dunzo.map((element,index) => {
                                         return(
-                                            <Grid xs={4} lg={12} sm={12} item className={classes.item}>{element.text}</Grid>
+                                            <Grid key={index} xs={4} lg={12} sm={12} item className={classes.item}>{element.text}</Grid>
                                         );
                                     })
                                 }
@@ -40,7 +40,7 @@ const MainFooter = (props) => {
                                 {
                                     cities.map((element,index) => {
                                         return(
-                                            <Grid onClick={e => history.push(element.path)} xs={4} lg={12}sm={12} item className={classes.item}>{element.text}</Grid>
+                                            <Grid key={index} onClick={e => history.push(element.path)} xs={4} lg={12}sm={12} item className={classes.item}>{element.text}</Grid>
                                         );
                                     })
                                 }
@@ -52,7 +52,7 @@ const MainFooter = (props) => {
                                 {
                                     getTouch.map((element,index) => {
                                         return(
-                                            <Grid xs={4} lg={12} sm={12} item className={classes.item}>{element.text}</Grid>
+                                            <Grid key={index} xs={4} lg={12} sm={12} item className={classes.item}>{element.text}</Grid>
                                         );
                                     })
                                 }

@@ -32,7 +32,7 @@ export const SmallGrid = ({children,...props}) => {
                     return (
                         <Grid key={item.id} className={classes.smallItem} item>
                             <img src={item.image} className={classes.smallImage} alt="logo"/>
-                            <p><Typography className={classes.smallText}>{item.text}</Typography></p>
+                            <Typography className={classes.smallText}>{item.text}</Typography>
                         </Grid>
                     )
                 })

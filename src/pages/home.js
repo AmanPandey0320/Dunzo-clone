@@ -18,7 +18,8 @@ const Home = (props) => {
 
     const classes = useStyles();
     const params = useParams();
-    const [bread,setBread] = useState(['Home',cityList[params.id].name]);
+    const [city,setCity] = useState(params.id);
+    const [bread,setBread] = useState(['Home',cityList[city].name]);
 
     return(
         <HomeWrapper>
@@ -29,7 +30,7 @@ const Home = (props) => {
                     separator={<TiArrowRightThick/>}
                 >
                     {
-                        bread.map(element => <Link className={classes.breadLink} to="/">{element}</Link>)
+                        bread.map((element,index) => <Link key={index} className={classes.breadLink} to="/">{element}</Link>)
                     }
                 </Breadcrumbs>
                 <br/>
